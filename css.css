@@ -1,42 +1,14 @@
-td {
-	border: 4px solid grey;
-	padding: 4px;
-}
 .tr_clas {
-	background-color: blue;
+	background-color: rgb(115, 115, 207);
+	color: #bdf7ff  ;
 }
-#inp1 {
-	margin-left: 0.7%;
-	width: 19%;
-}
-#inp2 {
-	margin-left: 1.5%;
-	width: 16.1%;
-	margin-right: 0.8%;
-}
-#butt1 {
-	margin: 5px;
-	padding: 3px 1% 3px 1%;
-}
-#butt2 {
-	margin: 5px;
-	padding: 3px 1.6% 3px 1.6%;
-}
-#butt3 {
-	margin: 5px;
-	padding: 3px 52px 3px 52px;
-}
-#s1 {
-	width: 135px;
-	margin: 4px;
+.tableOwn {
+	justify-content: space-around;
+	align-items: center;
 }
 #buttons {
-	width: 80%;
-	margin-left: 10%;
-	margin-right: 10%;
+	display: flex;
 }
-#table{
-	width: 80%;
-	margin-left: 10%;
-	margin-right: 10%;
-}
+
+
+
