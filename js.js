@@ -14,30 +14,21 @@ function fillTable(table, tableArray) {
 	for (var i = 0; i < tableArray.length; i++) {
 		var tr = document.createElement('tr');
 		var inpcap1 = document.createElement("input")
-		//var inpcap2 = document.createElement("input")
 		inpcap1.setAttribute('type', 'checkbox');
-		//inpcap2.setAttribute('type', 'checkbox');
 		for (var j = 0; j < tableArray[i].length; j++) {
 			var td = document.createElement('td');
 			if ((tableArray[i][j]==false)&&j==0) {
 				td.appendChild(inpcap1);
 				inpcap1.setAttribute('id', 'capture'+i);
-				//td.innerHTML = '<input type="checkbox" id="capture'+i+'">';
 				tr.appendChild(td);
 			} else if ((tableArray[i][j]==false)&&j==4) {
-				//td.appendChild(inpcap2);
-				//inpcap2.setAttribute('id', 'checkd'+i);
 				td.innerHTML = '<input type="checkbox" id="checkd'+i+'">';
 				tr.appendChild(td);
 			} else if ((tableArray[i][j]==true)&&j==0) {
 				td.appendChild(inpcap1);
 				inpcap1.setAttribute('id', 'capture'+i);
-				//td.innerHTML = '<input type="checkbox" id="capture'+i+'" ckecked>';
 				tr.appendChild(td);
 			} else if ((tableArray[i][j]==true)&&j==4) {
-				//td.appendChild(inpcap2);
-				//inpcap2.setAttribute('id', 'checkd'+i);
-				//inpcap2.setAttribute('ckecked', 'false');
 				td.innerHTML = '<input type="checkbox" id="checkd'+i+'" checked>';
 				tr.appendChild(td);
 				tr.className+="tr_clas";
